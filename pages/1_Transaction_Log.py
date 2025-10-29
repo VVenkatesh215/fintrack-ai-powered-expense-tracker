@@ -55,7 +55,6 @@ st.write(f"Current Balance: {formatted_balance}")
 # Add Expense
 with st.expander("Add New Expense", expanded=st.session_state.expense_expanded):
     with st.form("expense_form"):
-        # use explicit keys so we can clear fields after submit
         exName = st.text_input("Expense Title", key="exName")
         exDate = st.date_input("Date Of Expense", key="exDate")
         exAmount = st.number_input("Amount Spent", min_value=0.0, key="exAmount")

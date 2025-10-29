@@ -58,7 +58,7 @@ if st.session_state.logged_in:
     st.info("Head to sidebar to use features")
     
     # Add logout button
-    if st.button("🚪 Logout", key="logout_btn"):
+    if st.button("Logout", key="logout_btn"):
         st.session_state.logged_in = False
         st.session_state.user_email = ""
         st.success("Logged out successfully!")
@@ -75,6 +75,5 @@ if st.session_state.logged_in:
     ExManager = ExpenseManager(db_name=db_name)
     InManager = IncomeManager(db_name=db_name)
     account = Account(db_name=db_name)
-    st.toast("Welcome to FinTrack!")
 
 conn.close()
