@@ -69,6 +69,7 @@ FinTrack/
 │   ├── 1_Transaction_Log.py    # Add expenses and income
 │   ├── 2_View_Expenses.py      # View, edit, and delete transactions
 │   └── 3_Report.py             # Analytics and AI insights
+│   └── 4_Transaction_Categorizer.py # Categorizes transactions
 ├── utils/
 │   ├── expenseTracker.py       # Database operations (CRUD)
 │   ├── finbot.py               # AI-powered financial insights
